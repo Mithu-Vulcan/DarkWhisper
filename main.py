@@ -2,10 +2,12 @@ from flask import request, render_template, Flask, session, redirect, url_for
 from flask_socketio import join_room, leave_room, send, SocketIO
 import random
 from string import ascii_uppercase
+import eventlet
+import eventlet.wsgi
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "secret"
-socketio = SocketIO(app)
+socketio = SocketIO(app, async_mode="eventlet")
 
 rooms={}
 
@@ -115,4 +117,4 @@ def message(data):
     
 
 if __name__ == "__main__":
-    socketio.run(app)
+    socketio.run(app, host="0.0.0.0", port=10000)
