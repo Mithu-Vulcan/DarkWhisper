@@ -1,0 +1,216 @@
+:root {
+    --primary-bg: #121212;
+    --secondary-bg: #1E1E1E;
+    --primary-accent: #8B5CF6;
+    --secondary-accent: #A78BFA;
+    --text-light: #EDEDED;
+    --text-muted: #B3B3B3;
+    --input-bg: #252525;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: var(--primary-bg);
+    color: var(--text-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+
+.content {
+    width: 100%;
+    max-width: 400px;
+    background: var(--secondary-bg);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.welcome {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--primary-accent);
+}
+
+.name-div, .join-div {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: var(--text-muted);
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: var(--input-bg);
+    color: var(--text-light);
+    font-size: 1rem;
+    outline: none;
+}
+
+input:focus {
+    border: 2px solid var(--primary-accent);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background: var(--primary-accent);
+    color: var(--text-light);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: var(--secondary-accent);
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 600px;
+    background: var(--secondary-bg);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin: auto;
+}
+
+.chat-container h2 {
+    color: var(--primary-accent);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.chat-container .messages {
+    height: 400px;
+    overflow-y: auto;
+    background: var(--secondary-bg);
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid var(--primary-accent);
+}
+
+.chat-container .text {
+    background: rgba(139, 92, 246, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.chat-container .text strong {
+    color: var(--secondary-accent);
+}
+
+.chat-container .muted {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.chat-container .input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1rem;
+    background: var(--secondary-bg);
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--primary-accent);
+}
+
+.chat-container .input input {
+    flex: 1;
+    min-height: 45px;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: var(--input-bg);
+    color: var(--text-light);
+    font-size: 1rem;
+    outline: none;
+}
+
+.chat-container .input input:focus {
+    border: 2px solid var(--primary-accent);
+}
+
+#send-btn {
+    min-height: 45px;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    background: var(--primary-accent);
+    color: var(--text-light);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#send-btn:hover {
+    background: var(--secondary-accent);
+    color: #121212;
+}
+
+.text{
+    text-align: left;
+}
+
+@media (max-width: 600px) {
+    .content {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    .chat-container {
+        width: 90%;
+        padding: 1.2rem;
+    }
+
+    .chat-container .messages {
+        height: 300px;
+    }
+
+    .chat-container .input {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .chat-container .input input {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    #send-btn {
+        width: 100%;
+        font-size: 0.95rem;
+    }
+}
