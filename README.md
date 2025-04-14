@@ -1,6 +1,20 @@
 # Dark Whisper - Flask Chat App
 
-Dark Whisper is a real-time chat application built using Flask. It is designed for seamless and efficient communication with a simple and intuitive interface.
+Dark Whisper is a real-time chat application built using Flask. It is designed for seamless and efficient communication with a simple and intuitive interface. It is also Hosted on Render.com.
+Find it in the following URL => https://darkwhisper.onrender.com
+May take some time to start the server because it is hosted for free
+
+## Usage
+# To Create a anonymous chat room
+-Enter the Display Name
+-Click Create Room
+-The Room code will be given
+-Share it
+
+# To join a Already Created room
+-Enter Your Display Room
+-Enter the shared room key (Capital letters and numbers)
+-click Join
 
 ## Features
 - Real-time messaging
