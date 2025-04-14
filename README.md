@@ -6,15 +6,15 @@ May take some time to start the server because it is hosted for free
 
 ## Usage
 # To Create a anonymous chat room
--Enter the Display Name
--Click Create Room
--The Room code will be given
--Share it
+- Enter the Display Name
+- Click Create Room
+- The Room code will be given
+- Share it
 
 # To join a Already Created room
--Enter Your Display Room
--Enter the shared room key (Capital letters and numbers)
--click Join
+- Enter Your Display Room
+- Enter the shared room key (Capital letters and numbers)
+- click Join
 
 ## Features
 - Real-time messaging
